@@ -1,0 +1,21 @@
+name = "tg-navigator-bot"
+main = "src/index.ts"
+compatibility_date = "2026-08-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Free plan is enough for a DM-only, database-free bot like this one.
+workers_dev = true
+
+# ---------------------------------------------------------------------------
+# Secrets (never put real values here — set them with `wrangler secret put`,
+# see README.md). Listed here only so you remember what the bot expects:
+#
+#   BOT_TOKEN              -> token from @BotFather
+#   WEBHOOK_SECRET         -> spector0799spector (or your own secret string)
+#   WELCOME_PHOTO_FILE_ID  -> file_id of the /start banner photo (optional;
+#                             the bot works fine without it and simply skips
+#                             the photo block until you set it)
+# ---------------------------------------------------------------------------
+
+[vars]
+# Non-secret, safe-to-commit config can go here later if needed.

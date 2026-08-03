@@ -1,0 +1,27 @@
+{
+  "name": "tg-navigator-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "𝗧𝗴 𝗡𝗮𝘃𝗶𝗴𝗮𝘁𝗼𝗿 🔎 — a DM-only grammY Telegram bot on Cloudflare Workers. No database, no data storage: every button opens Telegram's own native chat/user picker.",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "typecheck": "tsc --noEmit",
+    "secret:bot-token": "wrangler secret put BOT_TOKEN",
+    "secret:webhook": "wrangler secret put WEBHOOK_SECRET",
+    "secret:photo": "wrangler secret put WELCOME_PHOTO_FILE_ID"
+  },
+  "dependencies": {
+    "grammy": "^1.45.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250801.0",
+    "typescript": "^5.6.3",
+    "wrangler": "^3.90.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

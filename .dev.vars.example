@@ -1,0 +1,8 @@
+# Copy this file to `.dev.vars` (which is git-ignored) for local `wrangler dev` testing.
+# In production, set these with `wrangler secret put <NAME>` instead — see README.md.
+
+BOT_TOKEN=123456:your-botfather-token-here
+WEBHOOK_SECRET=spector0799spector
+# Optional — leave empty until you have a real file_id. The bot detects an
+# empty/placeholder value and simply skips the welcome photo, no crash.
+WELCOME_PHOTO_FILE_ID=
